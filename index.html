@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-logo">Next Chapter Creations</div>
+  
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Order</a></li>
+      <li><a href="#socials">Socials</a></li>
+    </ul>
+  </nav>
 
   <header class="hero">
     <img src="./assets/IMG_0778.jpeg"
@@ -68,13 +78,77 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="reviews" class="reviews-section">
+    <h2>Customer Reviews</h2>
+    <p>Kind words from readers who loved their bookish finds.</p>
+  
+    <div class="reviews">
+      <div class="review-card">
+        <p>
+          "I purchased blind date w a book and I loved everything about it.
+          It was beautifully wrapped and the ones I purchased were also so very cute.
+          Get yours asap. You will love it!"
+        </p>
+        <h4>— Gaby Castro</h4>
+      </div>
+  
+      <div class="review-card">
+        <p>
+          "I received a Blind Date with a Book from Next Chapter Creations and loved it.
+          Everything was packaged so beautifully and thoughtfully. I also received a keychain
+          and bookmark separately, which was such a nice surprise. There were so many little
+          goodies included too. You can really tell how much care goes into their orders.
+          Highly recommend!"
+        </p>
+        <h4>— Blanca Reyna</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Place an Order</h2>
+    <p>Interested in an item or custom order? Send a message below.</p>
+  
+    <form name="order-contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="order-contact">
+  
+      <input type="text" name="name" placeholder="Your Name" required>
+  
+      <input type="email" name="email" placeholder="Your Email" required>
+  
+      <select name="product">
+        <option value="">What are you interested in?</option>
+        <option value="Blind Date With a Book">Blind Date With a Book</option>
+        <option value="Handmade Bookmark">Handmade Bookmark</option>
+        <option value="Acrylic Bookmark">Acrylic Bookmark</option>
+        <option value="Beaded Pen">Beaded Pen</option>
+        <option value="Keychain">Keychain</option>
+        <option value="Tote Bag">Tote Bag</option>
+        <option value="Custom Order">Custom Order</option>
+      </select>
+  
+      <textarea name="message" placeholder="Tell us what you're looking for" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <!-- <section id="contact">
     <h2>Place an Order</h2>
     <p>Message us to ask about available items, custom orders, or pricing.</p>
     <a href="mailto:nextchaptercreationsymg@gmail.com" class="btn">Contact Us</a>
-  </section>
+  </section> -->
 
-  <footer>
+  <footer id="socials">
+    <h3>Next Chapter Creations</h3>
+    <p>Follow us for new drops, custom items, and bookish gifts.</p>
+  
+    <div class="social-links">
+      <a href="https://www.facebook.com/wildarrowsbeauty" target="_blank">Facebook</a>
+      <a href="PASTE_INSTAGRAM_LINK_HERE" target="_blank">Instagram</a>
+    </div>
+  
     <p>© 2026 Next Chapter Creations. All rights reserved.</p>
   </footer>
 
