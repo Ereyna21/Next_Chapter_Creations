@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -310,4 +310,236 @@
   .product-btn:hover {
     background: var(--sage-green);
     color: var(--brown);
+  } */
+
+  :root {
+    --cream: #fff8f1;
+    --soft-pink: #f3c8d2;
+    --dusty-pink: #d98fa3;
+    --sage-green: #b8c7a3;
+    --deep-green: #5f7f5f;
+    --brown: #5c4033;
+    --white: #ffffff;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+    line-height: 1.6;
+  }
+  
+  section {
+    padding: 70px 8%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.3rem;
+    color: var(--deep-green);
+    margin-bottom: 20px;
+  }
+  
+  .btn,
+  .product-btn,
+  button {
+    background: var(--deep-green);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover,
+  .product-btn:hover,
+  button:hover {
+    background: var(--sage-green);
+    color: var(--brown);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: var(--soft-pink);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    color: var(--brown);
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: 600;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+
+  }
+  
+  .logo {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--brown);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  
+  /* About */
+  #about p,
+  #contact p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Products */
+  .products-section {
+    background: linear-gradient(135deg, var(--cream), var(--white));
+  }
+  
+  .products-section > p {
+    margin-bottom: 35px;
+  }
+  
+  .product-grid,
+  .product-gallery,
+  .reviews,
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  
+  .product-card,
+  .review-card,
+  .card {
+    background: var(--white);
+    border: 2px solid var(--soft-pink);
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(92, 64, 51, 0.12);
+  }
+  
+  .product-card {
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3,
+  .card h3 {
+    color: var(--deep-green);
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    display: block;
+    font-weight: bold;
+    color: var(--dusty-pink);
+    margin-bottom: 15px;
+  }
+  
+  /* Reviews */
+  .review-card p {
+    font-style: italic;
+    color: var(--brown);
+  }
+  
+  .review-card h4 {
+    margin-top: 15px;
+    color: var(--deep-green);
+  }
+  
+  /* Contact Form */
+  form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 14px;
+    border: 1px solid var(--dusty-pink);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    min-height: 140px;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--brown);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 8%;
+  }
+  
+  .social-links {
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    color: var(--white);
+    margin: 0 12px;
+    font-weight: bold;
   }
